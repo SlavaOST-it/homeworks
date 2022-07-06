@@ -1,0 +1,51 @@
+
+.message {
+    background-color: chartreuse;
+    max-width: 250px;
+
+    display: flex;
+    align-items: end;
+
+    margin-left: 50px;
+    padding: 5px 10px 5px 10px;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    bottom: 0;
+}
+
+.messageBlock {
+    background-color: rgba(47, 61, 40, 0.84);
+    /*margin-left: 15px;*/
+    border-radius: 5px 5px 5px 0;
+    padding: 5px;
+
+}
+
+.name {
+    color: #b9358c;
+    font-weight: bold;
+
+}
+
+.text {
+    color: white;
+}
+
+.time {
+    color: rgb(94, 229, 12);
+    float: right;
+}
+
+.hvost {
+    /* width: 0;
+     height: 0;
+     border-bottom: 20px solid rgba(47, 61, 40, 0.84);
+     border-left: 20px solid transparent;*/
+    width: 15px;
+    height: 15px;
+    background: radial-gradient(circle at 0 0, rgb(0, 0, 0, 0) 15px, rgb(47, 61, 40, 0.84) 0);
+}
