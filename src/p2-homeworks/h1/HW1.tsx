@@ -31,8 +31,6 @@ function HW1() {
                 time={messageData.time}
             />
 
-            <hr/>
-
             <AlternativeMessage
                 avatar={alternativeData.avatar}
                 name={alternativeData.name}
