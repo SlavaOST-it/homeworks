@@ -13,7 +13,7 @@ type GreetingContainerPropsType = {
 
 // более современный и удобный для про :)
 // уровень локальной логики
-const GreetingContainer = (props: GreetingContainerPropsType) => {
+const GreetingContainer: React.FC<GreetingContainerPropsType> = ({users, addUserCallback}) => {
     const [name, setName] = useState<string>('')
     const [error, setError] = useState<string>('')
 
@@ -30,11 +30,11 @@ const GreetingContainer = (props: GreetingContainerPropsType) => {
 
     const addUser = (event: React.MouseEvent<HTMLButtonElement>) => {
         alert(`Hello ${name} !`)
-        props.addUserCallback(event.currentTarget.value)
+        addUserCallback(event.currentTarget.value)
         setName('')
     }
 
-    const totalUsers = props.users.length
+    const totalUsers = users.length
 
     return (
         <Greeting
