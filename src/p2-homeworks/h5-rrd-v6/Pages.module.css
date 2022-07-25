@@ -1,0 +1,52 @@
+.header_links {
+
+    transition-duration: 1.2s;
+    transform: translate(-300px);
+}
+
+.header_links:hover{
+    transition-duration: 1.2s;
+    transform: translate(0);
+}
+
+.ver_line {
+    color: #888888;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.link {
+    margin: 10px;
+    text-decoration: none;
+    color: #888888;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.link:hover {
+    color: #424242;
+}
+
+.link:active {
+    color: black;
+    font-weight: 800;
+}
+
+.active{
+    margin: 10px;
+    text-decoration: none;
+    color: #572525;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.block {
+    background: white;
+    width: 20px;
+    height: 20px;
+
+    margin: 0;
+    position: relative;
+    top: 5px;
+    right: -5px;
+}
