@@ -13,7 +13,7 @@ type GreetingPropsType = {
 const Greeting: React.FC<GreetingPropsType> = (
     {name, setNameCallback, addUser, error, totalUsers}
 ) => {
-    const inputClass = name ? s.someClass : s.error
+    const inputClass = error ? s.error : s.someClass
 
     return (
         <div>
