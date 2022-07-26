@@ -1,5 +1,6 @@
 import React, {ChangeEvent} from 'react'
 import s from './Greeting.module.css'
+import ButtonMy from "../h4/common/c2-SuperButton/ButtonMy";
 
 type GreetingPropsType = {
     name: string
@@ -15,10 +16,15 @@ const Greeting: React.FC<GreetingPropsType> = (
 ) => {
     const inputClass = error ? s.error : s.someClass
 
+    const callBackHandler = (event: React.MouseEvent<HTMLButtonElement>)=>{
+        addUser(event)
+    }
+
     return (
         <div>
             <input value={name} onChange={setNameCallback} className={inputClass}/>
-            <button disabled={!name} onClick={addUser}>add</button>
+            <ButtonMy title={"Add"} callBack={callBackHandler} disable={!name} className={''}/>
+            {/*<button disabled={!name} onClick={addUser}>add</button>*/}
             <span>{totalUsers}</span>
             <div className={s.spanError}>{error}</div>
         </div>
