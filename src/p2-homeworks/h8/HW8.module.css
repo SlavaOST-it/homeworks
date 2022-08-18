@@ -1,0 +1,19 @@
+.list{
+    display: flex;
+    justify-content: space-between;
+    width: 200px;
+
+}
+
+.name{
+
+}
+
+.age{
+
+}
+
+.btn{
+    margin: 5px;
+
+}
