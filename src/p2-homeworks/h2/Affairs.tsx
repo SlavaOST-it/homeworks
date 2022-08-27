@@ -3,6 +3,7 @@ import Affair from './Affair'
 import {AffairType, FilterType} from './HW2'
 import ButtonMy from "../h4/common/c2-SuperButton/ButtonMy";
 
+
 type AffairsPropsType = {
     data: Array<AffairType>
     setFilter: (name: FilterType) => void
@@ -35,14 +36,12 @@ function Affairs(props: AffairsPropsType) {
     return (
         <div>
             {mappedAffairs}
-            <ButtonMy title={'All'} callBack={setAll} disable={false} className={''}/>
+            <ButtonMy title={'All'} callBack={setAll} disable={false} className={""}/>
             <ButtonMy title={'High'} callBack={setHigh} disable={false} className={''}/>
             <ButtonMy title={'Middle'} callBack={setMiddle} disable={false} className={''}/>
             <ButtonMy title={'Low'} callBack={setLow} disable={false} className={''}/>
-            {/*<button onClick={setAll}>All</button>*/}
-            {/*<button onClick={setHigh}>High</button>*/}
-            {/*<button onClick={setMiddle}>Middle</button>*/}
-            {/*<button onClick={setLow}>Low</button>*/}
+
+
         </div>
     )
 }
