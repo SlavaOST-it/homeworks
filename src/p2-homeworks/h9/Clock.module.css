@@ -1,0 +1,22 @@
+.btn{
+    color:black;
+    padding: 3px 15px;
+    /*width:50px;*/
+    text-decoration:none;
+    text-align:center;
+    /*margin:20px auto;*/
+    /*display: block;*/
+    background-color: white;
+    background-image: linear-gradient(to left,transparent,transparent 50%,black 50%,black);
+    background-position: 100% 0;
+    background-size: 200% 100%;
+    transition: all .50s ease-in;
+    font: 400 18px Tahoma;
+    font-weight: bold;
+    /*border: 1px solid black;*/
+    border: none;
+}
+.btn:hover {
+    background-position: 0 0;
+    color:#fff;
+}
