@@ -3,6 +3,7 @@ import s from "./Error.module.css"
 import {useNavigate} from "react-router-dom";
 import ButtonMy from "../../h4/common/c2-SuperButton/ButtonMy";
 
+
 function Error404() {
 
     const navigate = useNavigate()

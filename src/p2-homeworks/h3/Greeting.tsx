@@ -2,6 +2,7 @@ import React, {ChangeEvent} from 'react'
 import s from './Greeting.module.css'
 import ButtonMy from "../h4/common/c2-SuperButton/ButtonMy";
 
+
 type GreetingPropsType = {
     name: string
     setNameCallback: (e: ChangeEvent<HTMLInputElement>) => void

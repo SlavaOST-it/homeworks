@@ -3,6 +3,7 @@ import {AffairType} from "./HW2";
 import ButtonMy from "../h4/common/c2-SuperButton/ButtonMy";
 
 
+
 type AffairPropsType = {
     // key не нужно типизировать
     affair: AffairType

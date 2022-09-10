@@ -4,6 +4,7 @@ import {AffairType, FilterType} from './HW2'
 import ButtonMy from "../h4/common/c2-SuperButton/ButtonMy";
 
 
+
 type AffairsPropsType = {
     data: Array<AffairType>
     setFilter: (name: FilterType) => void
