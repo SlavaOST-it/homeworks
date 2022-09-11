@@ -7,7 +7,7 @@ export type InitStateType = {
     isTheme: string
 }
 const initState = {
-    isTheme: 'dark'
+    isTheme: 'default'
 } as const;
 
 export const themeReducer = (state:InitStateType = initState, action: changeThemeActionType): InitStateType => { // fix any
